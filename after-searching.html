@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devica-width, initial-scale=1.0">
+    <title>Car Auction | Searching</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Site header -->
+    <header id="ca-header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-left">
+              <a href="./index.html" class="logo-box no-decoration">
+                  <img src="./assets/images/logo.svg" alt="logo" />
+              </a>
+              <div class="header-menu">
+                <a href="./index.html" class="logo-box no-decoration d-xl-none d-block pt-4 pb-3 mb-2 broder-bottom w-100">
+                  <img src="./assets/images/logo.svg" alt="logo" />
+                </a>
+                <nav>
+                    <ul>
+                      <li class="active">
+                        <a href="./index.html">Home</a>
+                      </li>
+                      <li>
+                        <a href="#">Guide
+                          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                            <path d="M6.55886 3H7.89386C9.54886 3 10.2289 4.175 9.39886 5.61L8.72886 6.765L8.05886 7.92C7.22886 9.355 5.87386 9.355 5.04386 7.92L4.37386 6.765L3.70386 5.61C2.88886 4.175 3.56386 3 5.22386 3H6.55886Z" fill="#575E8D"/>
+                          </svg>
+                        </a>
+                        <div class="ca-mega-menu">
+                          <h6 class="mega-menu-title text-grey fw-400">YOUR ESSENTIAL RESOURCE</h6>
+                          <ul>
+                            <li>
+                              <a href="./how-it-works.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-how-it-works.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">How it works</div>
+                                  <div class="text-grey">Simplifying the Way It Works</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./how-to-read.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-how-to-read.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">How to read</div>
+                                  <div class="text-grey">Unlocking the Meaning</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./how-points-work.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-how-points-work.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">How points work</div>
+                                  <div class="text-grey">Unveiling the Mechanics</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./videos.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-video.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Video</div>
+                                  <div class="text-grey">Engaging and Informative</div>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#">Products
+                          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                            <path d="M6.55886 3H7.89386C9.54886 3 10.2289 4.175 9.39886 5.61L8.72886 6.765L8.05886 7.92C7.22886 9.355 5.87386 9.355 5.04386 7.92L4.37386 6.765L3.70386 5.61C2.88886 4.175 3.56386 3 5.22386 3H6.55886Z" fill="#575E8D"/>
+                          </svg>
+                        </a>
+                        <div class="ca-mega-menu">
+                          <h6 class="mega-menu-title text-grey fw-400">EXPLORE OUR PRODUCTS</h6>
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-import-cars.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Import Cars</div>
+                                  <div class="text-grey">Tailored to Your Preferences</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./index.html#home-banner">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-auction-house.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Auction House</div>
+                                  <div class="text-grey">Uncover Remarkable Deals</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./translate-to-eng.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-translate-to-english.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Translate to English</div>
+                                  <div class="text-grey">Breaking Language Barriers</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./report.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-report.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Report+</div>
+                                  <div class="text-grey">Unveiling Deeper Insights</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./export-certification-translation.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-export-cert-translation.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Export Cert. Translation</div>
+                                  <div class="text-grey">Ensuring Clarity and Accuracy</div>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#">Resources
+                          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                            <path d="M6.55886 3H7.89386C9.54886 3 10.2289 4.175 9.39886 5.61L8.72886 6.765L8.05886 7.92C7.22886 9.355 5.87386 9.355 5.04386 7.92L4.37386 6.765L3.70386 5.61C2.88886 4.175 3.56386 3 5.22386 3H6.55886Z" fill="#575E8D"/>
+                          </svg>
+                        </a>
+                        <div class="ca-mega-menu">
+                          <h6 class="mega-menu-title text-grey fw-400">EXPAND YOUR KNOWLEDGE</h6>
+                          <ul>
+                            <li>
+                              <a href="./index.html#home-banner">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-auction-house.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Auction Sheet</div>
+                                  <div class="text-grey">Unveiling Vehicle Details</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./index.html#car-tips">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-car-tips.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Car Tips</div>
+                                  <div class="text-grey">Unlock Valuable Tips</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-japan.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Japan</div>
+                                  <div class="text-grey">Stay Updated</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-car.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Car</div>
+                                  <div class="text-grey">Updates in the world of cars</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./blog.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-news.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">News</div>
+                                  <div class="text-grey">Stay Informed</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-view.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">View All</div>
+                                  <div class="text-grey">Discover Everything</div>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="./packages.html">Packages</a>
+                      </li>
+                      <li>
+                        <a href="./about.html">About</a>
+                      </li>
+                      <li>
+                        <a href="./contact.html">Contact</a>
+                      </li>
+                    </ul>
+                </nav>
+                <div class="header-actions d-xl-none d-block">
+                  <a href="./login.html" class="ca-btn ca-btn-outline-white me-2">Login</a>
+                  <a href="./verify.html" class="ca-btn ca-btn-secondary me-2"><span class="me-2"><img src="./assets/images/verify-icon.svg" alt="img" /></span>Verify Now</a>
+                  <a href="./signup.html" class="ca-btn ca-btn-primary">Sign Up</a>
+                </div>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="header-actions d-xl-block d-none">
+              <a href="./login.html" class="ca-btn me-2">Login</a>
+              <a href="./verify.html" class="ca-btn ca-btn-secondary me-2"><span class="me-2"><img src="./assets/images/verify-icon.svg" alt="img" /></span>Verify Now</a>
+              <a href="./signup.html" class="ca-btn ca-btn-outline-primary">Sign Up</a>
+
+                <!-- <div class="user-profile-area">
+                  <div class="user-avatar-box">
+                      <img src="./assets/images/avatar.png" alt="img" />
+                  </div>
+                  <div class="profile-dropdown-container">
+                      <div class="profile-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <p>Albert</p>
+                          <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                      </div>
+                      <ul class="dropdown-menu dropdown-menu-end ca-dropdown-menu">
+                          <div class="ca-profile-container">
+                          <div class="ca-profile-img">
+                              <img src="./assets/images/avatar.png" alt="">
+                          </div>
+                          <div class="ca-profile-name text-blue">Jennifer</div>
+                          </div>
+                          <div class="separator"></div>
+                          <li><a href="#"><button class="dropdown-item" type="button"><span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span><span class="text">Profile</span></button></a></li>
+                          <li><a href="#"><button class="dropdown-item" type="button"><span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span><span class="text">User Mangement</span></button></a></li>
+                          <div class="separator"></div>
+                          <li><a href="#"><button class="dropdown-item" type="button"><span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span><span class="text">Logout</span></button></a></li>
+                      </ul>
+                      <p class="text-mini mb-0 user-role">Admin</p>
+                  </div>
+                </div> -->
+            </div>
+            <div class="hamburger ms-4 d-xl-none d-block">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="site-main-content">
+        <section class="section-padding pt-first-section bg-lightgrey">
+            <div class="container">
+                <div class="container-small px-0">
+                    <div class="section-title-area text-center">
+                        <h2>What products are you interested in?</h2>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-4">
+                        <a href="#" class="mega-btn">
+                            <div class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <path d="M42.6667 5.33325H21.3333C12 5.33325 8 10.6666 8 18.6666V45.3333C8 53.3333 12 58.6666 21.3333 58.6666H42.6667C52 58.6666 56 53.3333 56 45.3333V18.6666C56 10.6666 52 5.33325 42.6667 5.33325ZM21.3333 32.6666H32C33.0933 32.6666 34 33.5733 34 34.6666C34 35.7599 33.0933 36.6666 32 36.6666H21.3333C20.24 36.6666 19.3333 35.7599 19.3333 34.6666C19.3333 33.5733 20.24 32.6666 21.3333 32.6666ZM42.6667 47.3333H21.3333C20.24 47.3333 19.3333 46.4266 19.3333 45.3333C19.3333 44.2399 20.24 43.3333 21.3333 43.3333H42.6667C43.76 43.3333 44.6667 44.2399 44.6667 45.3333C44.6667 46.4266 43.76 47.3333 42.6667 47.3333ZM49.3333 24.6666H44C39.9467 24.6666 36.6667 21.3866 36.6667 17.3333V11.9999C36.6667 10.9066 37.5733 9.99992 38.6667 9.99992C39.76 9.99992 40.6667 10.9066 40.6667 11.9999V17.3333C40.6667 19.1733 42.16 20.6666 44 20.6666H49.3333C50.4267 20.6666 51.3333 21.5733 51.3333 22.6666C51.3333 23.7599 50.4267 24.6666 49.3333 24.6666Z" fill="#FF9700"/>
+                                </svg>
+                            </div>
+                            <div class="btn-text">True Report+</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="mega-btn">
+                            <div class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <path d="M23.8135 5.33325H13.3868C8.00016 5.33325 5.3335 7.99992 5.3335 13.3866V23.8399C5.3335 29.3333 8.00016 31.9999 13.3868 31.8666H23.8402C29.3335 31.9999 32.0002 29.3333 31.8668 23.8133V13.3866C32.0002 7.99992 29.3335 5.33325 23.8135 5.33325ZM24.0268 26.0266C22.2135 26.0266 20.4535 25.3333 18.9868 24.1066C17.3335 25.3066 15.3335 26.0266 13.1735 26.0266C12.0802 26.0266 11.1735 25.1199 11.1735 24.0266C11.1735 22.9333 12.0802 22.0266 13.1735 22.0266C15.8935 22.0266 18.1602 20.1599 18.9868 17.5999H13.1735C12.0802 17.5999 11.1735 16.6933 11.1735 15.5999C11.1735 14.5066 12.0802 13.5999 13.1735 13.5999H16.6135C16.7202 12.5866 17.5468 11.7866 18.5868 11.7866C19.6268 11.7866 20.4535 12.5866 20.5602 13.5999H21.2535C21.2802 13.5999 21.3068 13.5999 21.3068 13.5999H21.3602H24.0002C25.0935 13.5999 26.0002 14.5066 26.0002 15.5999C26.0002 16.6933 25.1202 17.5999 24.0002 17.5999H23.1202C22.8802 18.8799 22.3735 20.0799 21.7068 21.1733C22.4268 21.7066 23.2002 22.0266 24.0268 22.0266C25.1202 22.0266 26.0268 22.9333 26.0268 24.0266C26.0268 25.1199 25.1202 26.0266 24.0268 26.0266Z" fill="#FF9700"/>
+                                    <path d="M24.0002 60.6667C12.6135 60.6667 3.3335 51.3867 3.3335 40C3.3335 38.9067 4.24016 38 5.3335 38C6.42683 38 7.3335 38.9067 7.3335 40C7.3335 47.8933 12.8268 54.5067 20.2135 56.24L19.4935 55.04C18.9335 54.08 19.2268 52.8533 20.1868 52.2933C21.1202 51.7333 22.3735 52.0267 22.9335 52.9867L25.7335 57.6533C26.1068 58.2667 26.1068 59.04 25.7602 59.6533C25.3868 60.2667 24.7202 60.6667 24.0002 60.6667Z" fill="#FF9700"/>
+                                    <path d="M58.6668 25.9999C57.5735 25.9999 56.6668 25.0933 56.6668 23.9999C56.6668 16.1066 51.1735 9.49325 43.7868 7.75992L44.5068 8.95992C45.0668 9.91992 44.7735 11.1466 43.8135 11.7066C42.8802 12.2666 41.6268 11.9733 41.0668 11.0133L38.2668 6.34659C37.8935 5.73325 37.8935 4.95992 38.2402 4.34659C38.6135 3.73325 39.2802 3.33325 40.0002 3.33325C51.3868 3.33325 60.6668 12.6133 60.6668 23.9999C60.6668 25.0933 59.7602 25.9999 58.6668 25.9999Z" fill="#FF9700"/>
+                                    <path d="M45.1199 31.6001C37.6532 31.6001 31.5732 37.6534 31.5732 45.1468C31.5732 52.6134 37.6266 58.6934 45.1199 58.6934C52.5866 58.6934 58.6666 52.6401 58.6666 45.1468C58.6666 37.6534 52.6132 31.6001 45.1199 31.6001ZM51.7332 51.5734C50.7466 52.0534 49.5466 51.6801 49.0399 50.6668L48.5866 49.7601H41.6799L41.2266 50.6668C40.8799 51.3601 40.1599 51.7601 39.4399 51.7601C39.1466 51.7601 38.8266 51.6801 38.5599 51.5468C37.5732 51.0401 37.1732 49.8401 37.6532 48.8534L43.3599 37.4668C43.7066 36.8001 44.3999 36.3734 45.1466 36.3734C45.8932 36.3734 46.5866 36.8001 46.9332 37.4934L52.6399 48.8801C53.1199 49.8668 52.7199 51.0668 51.7332 51.5734Z" fill="#FF9700"/>
+                                    <path d="M43.6802 45.7599H46.5868L45.1202 42.8533L43.6802 45.7599Z" fill="#FF9700"/>
+                                </svg>
+                            </div>
+                            <div class="btn-text">Auction Sheet Translation</div>
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="mega-btn">
+                            <div class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                    <path d="M40.0002 41.3333C40.0002 50.9067 32.2402 58.6667 22.6668 58.6667C13.0935 58.6667 5.3335 50.9067 5.3335 41.3333C5.3335 31.76 13.0935 24 22.6668 24C23.1202 24 23.6002 24.0267 24.0535 24.0533C32.5068 24.72 39.2802 31.4933 39.9468 39.9467C39.9735 40.4 40.0002 40.88 40.0002 41.3333Z" fill="#FF9700"/>
+                                    <path d="M58.6667 22.6666C58.6667 31.3599 52.2667 38.5333 43.9467 39.7866V39.6266C43.12 29.2799 34.72 20.8799 24.2934 20.0533H24.2134C25.4667 11.7333 32.64 5.33325 41.3334 5.33325C50.9067 5.33325 58.6667 13.0933 58.6667 22.6666Z" fill="#FF9700"/>
+                                    <path d="M14.9068 5.33325H8.00016C6.5335 5.33325 5.3335 6.53325 5.3335 7.99992V14.9066C5.3335 17.2799 8.2135 18.4799 9.8935 16.7999L16.8002 9.89325C18.4535 8.21325 17.2802 5.33325 14.9068 5.33325Z" fill="#FF9700"/>
+                                    <path d="M49.0933 58.6667H55.9999C57.4666 58.6667 58.6666 57.4667 58.6666 56V49.0934C58.6666 46.72 55.7866 45.52 54.1066 47.2L47.1999 54.1067C45.5466 55.7867 46.7199 58.6667 49.0933 58.6667Z" fill="#FF9700"/>
+                                </svg>
+                            </div>
+                            <div class="btn-text">Certificate Translation</div>
+                        </a>
+                    </div>
+                    <div class="col-12 text-md-end">
+                        <a href="#" class="ca-btn ca-btn-secondary mt-4">Proceed to Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+    </main>
+    
+    <!-- Site footer -->
+    <footer id="ca-footer">
+      <section class="newsletter-section section-padding">
+        <div class="container position-relative">  
+          <div class="p-3 px-sm-5 py-sm-4 rounded-large bg-primary text-white">
+            <div class="row gy-4">
+              <div class="col-6 col-lg-7">
+                <h6>Newsletter</h6>
+                <div class="text-lightgrey2">Send me great Car auction sheet offers and latest vehicle reviews.</div>
+              </div>
+              <div class="col-6 col-lg-5">
+                <form class="field-with-btn">
+                  <div class="field-icon"><img src="./assets/images/sms.svg" alt="img" /></div>
+                  <input type="email" class="form-control" placeholder="Enter your email" />
+                  <button class="ca-btn ca-btn-secondary">Submit</button>
+                </form>
+              </div>
+            </div>    
+          </div>
+        </div>
+      </section>
+      <section class="footer-content-section section-padding pt-4">
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-lg-6">
+              <div class="logo-box mb-4">
+                <img src="./assets/images/logo.svg" alt="img" />
+              </div>
+              <div class="about-content text-grey mb-5"><p>Car Auction Sheet have the aim to improve the process of buying sheets to provide a better experience for customers, and we have become the most admired digital business.</p></div>
+              <div class="contact-widget mb-3">
+                <div class="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M17.3077 16.2748C17.3077 16.5748 17.241 16.8832 17.0993 17.1832C16.9577 17.4832 16.7744 17.7665 16.5327 18.0332C16.1244 18.4832 15.6743 18.8082 15.166 19.0165C14.666 19.2248 14.1244 19.3332 13.541 19.3332C12.691 19.3332 11.7827 19.1332 10.8243 18.7248C9.86602 18.3165 8.90768 17.7665 7.95768 17.0748C6.99935 16.3748 6.09102 15.5998 5.22435 14.7415C4.36602 13.8748 3.59102 12.9665 2.89935 12.0165C2.21602 11.0665 1.66602 10.1165 1.26602 9.17484C0.866016 8.22484 0.666016 7.3165 0.666016 6.44984C0.666016 5.88317 0.766016 5.3415 0.966016 4.8415C1.16602 4.33317 1.48268 3.8665 1.92435 3.44984C2.45768 2.92484 3.04102 2.6665 3.65768 2.6665C3.89102 2.6665 4.12435 2.7165 4.33268 2.8165C4.54935 2.9165 4.74102 3.0665 4.89102 3.28317L6.82435 6.00817C6.97435 6.2165 7.08268 6.40817 7.15768 6.5915C7.23268 6.7665 7.27435 6.9415 7.27435 7.09984C7.27435 7.29984 7.21602 7.49984 7.09935 7.6915C6.99102 7.88317 6.83268 8.08317 6.63268 8.28317L5.99935 8.9415C5.90768 9.03317 5.86602 9.1415 5.86602 9.27484C5.86602 9.3415 5.87435 9.39984 5.89102 9.4665C5.91602 9.53317 5.94102 9.58317 5.95768 9.63317C6.10768 9.90817 6.36602 10.2665 6.73268 10.6998C7.10768 11.1332 7.50768 11.5748 7.94102 12.0165C8.39102 12.4582 8.82435 12.8665 9.26602 13.2415C9.69935 13.6082 10.0577 13.8582 10.341 14.0082C10.3827 14.0248 10.4327 14.0498 10.491 14.0748C10.5577 14.0998 10.6243 14.1082 10.6993 14.1082C10.841 14.1082 10.9493 14.0582 11.041 13.9665L11.6743 13.3415C11.8827 13.1332 12.0827 12.9748 12.2743 12.8748C12.466 12.7582 12.6577 12.6998 12.866 12.6998C13.0243 12.6998 13.191 12.7332 13.3743 12.8082C13.5577 12.8832 13.7494 12.9915 13.9577 13.1332L16.716 15.0915C16.9327 15.2415 17.0827 15.4165 17.1743 15.6248C17.2577 15.8332 17.3077 16.0415 17.3077 16.2748Z" stroke="#1C1C45" stroke-width="1.2" stroke-miterlimit="10"/>
+                    <path d="M14.4167 8.49967C14.4167 7.99967 14.025 7.23301 13.4417 6.60801C12.9083 6.03301 12.2 5.58301 11.5 5.58301" stroke="#1C1C45" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.3333 8.49984C17.3333 5.27484 14.725 2.6665 11.5 2.6665" stroke="#1C1C45" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="content">
+                  <p class="text-mini text-grey mb-0">Tel</p>
+                  <p class="mb-0">000-123-3456</p>
+                </div>
+              </div>
+              <div class="contact-widget mb-3">
+                <div class="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14.1667 17.0837H5.83335C3.33335 17.0837 1.66669 15.8337 1.66669 12.917V7.08366C1.66669 4.16699 3.33335 2.91699 5.83335 2.91699H14.1667C16.6667 2.91699 18.3334 4.16699 18.3334 7.08366V12.917C18.3334 15.8337 16.6667 17.0837 14.1667 17.0837Z" stroke="#1C1C45" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.1666 7.5L11.5583 9.58333C10.7 10.2667 9.29164 10.2667 8.43331 9.58333L5.83331 7.5" stroke="#1C1C45" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="content">
+                  <p class="text-mini text-grey mb-0">Mail</p>
+                  <p class="mb-0">help@carauctionsheet.com</p>
+                </div>
+              </div>
+              <div class="contact-widget mb-3">
+                <div class="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 11.1912C11.436 11.1912 12.6 10.0272 12.6 8.59121C12.6 7.15527 11.436 5.99121 10 5.99121C8.56408 5.99121 7.40002 7.15527 7.40002 8.59121C7.40002 10.0272 8.56408 11.1912 10 11.1912Z" stroke="#1C1C45" stroke-width="1.5"/>
+                    <path d="M3.01669 7.07533C4.65836 -0.141339 15.35 -0.133006 16.9834 7.08366C17.9417 11.317 15.3084 14.9003 13 17.117C11.325 18.7337 8.67502 18.7337 6.99169 17.117C4.69169 14.9003 2.05836 11.3087 3.01669 7.07533Z" stroke="#1C1C45" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div class="content">
+                  <p class="text-mini text-grey mb-0">Address</p>
+                  <p class="mb-0">706 Campfire Ave. Meriden, CT 06450</p>
+                </div>
+              </div>
+              <p class="mt-4 text-mini text-grey d-lg-block d-none">© 2000-2021, All Rights Reserved</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="row gy-4">
+                <div class="col-sm-6 col-4 footer-widget">
+                  <h6 class="mb-4">About</h6>
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Payment Method</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Our Authors</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-4 footer-widget">
+                  <h6 class="mb-4">Product</h6>
+                  <ul>
+                    <li><a href="#">Import Cars</a></li>
+                    <li><a href="#">Auction House</a></li>
+                    <li><a href="#">Translate into English</a></li>
+                    <li><a href="#">Report+</a></li>
+                    <li><a href="#">Export Cert. Translation</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-4 footer-widget">
+                  <h6 class="mb-4">FAQ</h6>
+                  <ul>
+                    <li><a href="#">Auction Sheet</a></li>
+                    <li><a href="#">Car Tips</a></li>
+                    <li><a href="#">Japan</a></li>
+                    <li><a href="#">Car</a></li>
+                    <li><a href="#">View All</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="social-buttons mt-5">
+                <a href="#" class="single-social-btn"><img src="./assets/images/linkedin-btn.png" alt="img" /></a>
+                <a href="#" class="single-social-btn"><img src="./assets/images/facebook-btn.png" alt="img" /></a>
+                <a href="#" class="single-social-btn"><img src="./assets/images/youtube-btn.png" alt="img" /></a>
+              </div>
+              <p class="mt-4 text-mini text-grey d-lg-none d-block mb-0">© 2000-2021, All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </footer>
+    
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.js"></script>
+    <script type="text/javascript" src="./assets/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+@mixin bg-cover-center{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin object-cover-center{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@mixin transition($val){
+    transition: $val;
+}
+
+@mixin transitionEaseIn($val) {
+    transition: $val;
+    transition-timing-function: ease-in;
+}
+
+@mixin blackTransparent($val) {
+    background-color: rgba(0, 0, 0, $val);
+}
+
+@mixin flexCenter(){
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin boxShadowBottom($val1, $val2, $val3, $colorTransparency){
+    box-shadow: $val1 $val2 $val3 rgba(0, 0, 0, $colorTransparency);
+}
+
+@mixin box-shadow(){
+    box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.60);
+}

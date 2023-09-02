@@ -1,0 +1,108 @@
+/*************************************
+    FORM CONTROL FIELD
+*************************************/
+// .container{
+//     @media only screen and (min-width: 1600px){
+//         min-width: 1530px;   
+//     }
+// }
+
+.form-floating{
+    > label{
+        padding: 0.25rem .75rem;
+        font-size: 16px;
+        color: #999999;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        height: unset;
+        top: 13px;
+        @include breakpoint(x-large-laptop){
+            font-size: 14px;
+            top: 9px;
+        }
+    }
+
+    > .form-select{
+        padding-top: 1.425rem;
+        padding-bottom: .425rem;
+        cursor: pointer;
+    }
+}
+.form-control, 
+.form-select{
+    background-color: #E6E8EE;
+    // height: calc(4rem - 4px) !important;
+    // font-size: 16px;
+    height: 44px !important;   
+    font-size: 14px; 
+    border-color: #E6E8EE;
+    @include transition(.5s);
+
+    &::placeholder{
+        color: $primaryLight;
+    }
+    &:focus{
+        box-shadow: none;
+        border: 1px solid $primaryLight;
+    }
+    /* Chrome, Safari, Edge, Opera */
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    }
+
+    /* Firefox */
+    &[type=number] {
+    -moz-appearance: textfield;
+    }
+
+    // @include breakpoint(x-large-laptop){
+    //     height: 44px !important;   
+    //     font-size: 14px; 
+    // }
+}
+.form-floating{
+    .form-control,
+    .form-select{
+        padding: 1.25rem .75rem .5rem !important;
+        @include breakpoint(x-large-laptop){
+            padding: 1.25rem .75rem .5rem !important;
+        }
+    }
+}
+textarea.form-control{
+    height: unset !important;
+}
+.form-select{
+    cursor: pointer;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label{
+    opacity: 1;
+}
+.form-floating>.form-control:not(:placeholder-shown),
+.form-floating>.form-select:not(:placeholder-shown){
+    background-color: $white;
+    border-color: $sky;
+}
+
+.form-check{
+    text-align: left;
+    label{
+        // font-size: 14px;
+        // @include breakpoint(x-large-laptop){
+        //     font-size: 12px;
+        // }
+    }
+    .form-check-input{
+        &:checked{
+            background-color: $secondary;
+            border-color: $secondary;
+        }
+    }
+}
+

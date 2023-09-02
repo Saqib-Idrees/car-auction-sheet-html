@@ -1,0 +1,942 @@
+@import "./assets/sass/base/fonts";
+@import "./assets/sass/partials/variables";
+@import "./assets/sass/partials/mixins";
+@import "./assets/sass/partials/breakpoints";
+@import "./assets/sass/base/utilities";
+@import "./assets/sass/base/global";
+@import "./assets/sass/components/ui-elements";
+
+
+/***************************************
+    HEADER
+***************************************/
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: $white;
+  backdrop-filter: blur(0px);
+  border-bottom: 1px solid #ffffff1f;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0);
+
+  @include transition(.3s);
+  
+  .header-inner {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: spaca-between;
+    align-items: center;
+    @include transition(.2s);
+    @include breakpoint(small-tab){
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .logo-box{
+      display: block;
+      width: 125px;
+      margin-right: 48px;
+      img{
+        max-width: 100%;
+      }
+    }
+    .header-menu{
+      width: fit-content;
+      transition: .3s;
+      @include breakpoint(small-laptop){
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 400px;
+        background-color: $primary;
+        transform: translateX(-100%);
+        // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      @include breakpoint(mobile){
+        width: 100%;
+      }
+
+      .header-btn{
+        border-color: $white;
+        color: $white;
+        border: 1px solid rgba(255, 255, 255, 0.1215686275);
+        letter-spacing: 1px;
+        &:hover{
+          background-color: $primary;
+          color: $white;
+        }
+    
+        &.btn-solid{
+          background-color: $white;
+          color: $primary;
+        }
+      }
+    }
+    nav{
+      @include breakpoint(small-laptop){
+        padding: 0 0 32px;
+        height: calc(100% - 150px);
+      }
+      > ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 32px;
+        list-style: none;
+        @include breakpoint(large-laptop){
+          gap: 16px 20px;
+        }
+        @include breakpoint(small-laptop){
+          height: 100%;
+          overflow: auto;
+          gap: 20px 0px;
+          align-content: flex-start;
+        }
+
+        > li{
+          position: relative;
+          @include breakpoint(small-laptop){
+            width: 100%;
+          }
+
+          &.has-mega-menu{
+            > a > svg{
+              @include transition(.3s);
+              path{
+                @include breakpoint(small-laptop){
+                  fill: $white;
+                }
+              }
+            }
+
+            &:after{
+              content: "";
+              width: 20px;
+              height: 20px;
+              border-radius: 4px;
+              background-color: $white;
+              transform: rotate(45deg);
+              position: absolute;
+              top: 40px;
+              left: calc(50% - 10px);
+              border-top: 1px solid #dee2e6;
+              border-left: 1px solid #dee2e6;
+              opacity: 0;
+              visibility: hidden;
+              @include transition(.3s);
+
+              @include breakpoint(small-laptop){
+                display: none;
+              }
+            }
+            &:hover{
+              > a > svg{
+                @include transition(.3s);
+                path{
+                  @include breakpoint(small-laptop){
+                    fill: $secondary;
+                  }
+                }
+              }
+
+              &:after{
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+
+          > a{
+            text-decoration: none;
+            color: $primaryLight;
+            position: relative;
+            display: block;
+            width: fit-content;
+            @include breakpoint(small-laptop){
+              color: $white;
+            }
+
+            &:after{
+              content: "";
+              position: absolute;
+              bottom: 0px;
+              left: 0;
+              width: 0px;
+              height: 2px;
+              background-color: $secondary;
+              opacity: 0;
+              transition: .2s;
+              @include breakpoint(small-laptop){
+                display: none;
+              }
+            }
+          }
+
+          > .ca-mega-menu{
+            border: 1px solid #dee2e6;
+            position: absolute;
+            top: 50px;
+            left: -80px;
+            background-color: $white;
+            box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.40);
+            border-radius: 12px;
+            overflow: hidden;
+            padding: 0px 32px;
+            height: 0;
+            width: 600px;
+            opacity: 0;
+            visibility: hidden;
+            @include transition(.3s);
+            @include breakpoint(small-laptop){
+              position: static;
+              width: 100%;
+              opacity: 1;
+              visibility: visible;
+              border-radius: 6px;
+              background-color: $transparent;
+              padding: 0 16px;
+              box-shadow: none;
+              border: 0;
+              margin: 0;
+            }
+
+            > ul{
+              display: flex;
+              flex-wrap: wrap;
+              margin-left: -12px;
+              margin-right: -12px;
+              > li{
+                width: 50%;
+                padding: 12px;
+                list-style-type: none;
+                @include breakpoint(small-laptop){
+                  width: 100%;
+                }
+                > a{
+                  display: flex;
+                  flex-wrap: wrap;
+                  text-decoration: none;
+                  color: $primary;
+                  @include transition(.3s);
+                  .icon-box{
+                    width: 24px;
+                  }
+                  .content-box{
+                    width: calc(100% - 24px);
+                    padding-left: 16px;
+                  }
+                }
+                &:hover,
+                &.active{
+                  > a{
+                    color: $secondary;
+                  }
+                }
+              }
+            }
+          }
+
+          &.active,
+          &:hover{
+            a{
+              color: $primary;
+              @include breakpoint(small-laptop){
+                color: $secondary;
+              }
+              &:after{
+                opacity: 1;
+                width: 26px;
+              }
+            }
+          }
+
+          &:hover{
+            > .ca-mega-menu{
+              opacity: 1;
+              visibility: visible;
+              padding: 32px;
+              height: auto;
+              @include breakpoint(small-laptop){
+                padding: 16px;
+                background-color: $white;
+                margin: 10px 0 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .header-left,
+    .header-right{
+      padding: 0 16px;
+      @include breakpoint(small-tab){
+        padding: 0;
+      }
+    }
+    .header-left{
+      width: calc(100% - 460px);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      @include breakpoint(large-laptop){
+        width: calc(100% - 340px);
+      }
+      @include breakpoint(small-laptop){
+        width: calc(100% - 100px);
+      }
+    }
+    .header-right{
+      width: 460px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+      @include breakpoint(large-laptop){
+        width: 340px;
+      }
+      @include breakpoint(small-laptop){
+        width: 100px;
+      }
+    }
+  }
+
+  .header-actions{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .ca-btn{
+      font-size: 12px;
+      min-width: auto;
+    }
+  }
+}
+
+// Menu Button Clicked
+header#ca-header.menu-btn-clicked{
+  .header-inner .header-menu{
+    @include breakpoint(small-laptop){
+      transform: translateX(0);
+      // clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+      padding: 0 16px;
+    }
+    @include breakpoint(mobile){
+      // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}
+
+// Body Scrolled
+header#ca-header.scrolled{
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid #ffffff1f;
+  color: $primary;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.05);
+  .header-inner{
+    padding: 16px 0;
+  }
+  // .hamburger .line{
+  //   background-color: $primary;
+  // }
+  // .header-inner ul > li > a:after{
+  //   background-color: $primary;
+  //   @include breakpoint(ipad){
+  //     background-color: $white;
+  //   }
+  // }
+}
+
+// Menu Button Clicked and Body Scrolled
+header#ca-header.scrolled.menu-btn-clicked{
+  .hamburger .line{
+    @include breakpoint(mobile){
+      background-color: $white;
+    }
+  }
+  .header-menu .header-btn{
+    border-color: $white;
+    color: $white;
+    border: 1px solid rgba(255, 255, 255, 0.1215686275);
+    &:hover{
+      background-color: $primary;
+      color: $white;
+    }
+
+    &.btn-solid{
+      background-color: $white;
+      color: $primary;
+    }
+  }
+}
+
+/***************************************
+    MAIN CSS
+***************************************/
+
+
+.initial-page{
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  padding: 60px 0;
+  @include bg-cover-center();
+  &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      @include blackTransparent(.2);
+  }
+  @include breakpoint(small-tab){
+    padding: 16px 0;
+  }
+  > .container{
+      position: relative;
+      padding-top: 100px;
+      .form-box{
+          border-radius: 10px;
+          position: relative;
+          padding: 40px 60px 30px;
+          background-color: $white;
+          max-width: 600px;
+          width: 100%;
+          @include breakpoint(x-large-laptop){
+            max-width: 500px;
+            padding: 24px 32px 14px;
+          }
+          @include breakpoint(ipad){
+            margin-left: auto;
+            margin-right: auto;
+          }
+          @include breakpoint(small-tab){
+            padding: 24px 16px 16px;
+          }
+
+          .stylish-arrow{
+            top: -22px;
+            right: 26px;
+            @include breakpoint(tab){
+              max-width: 65px;
+              top: -19px;
+            }
+          }
+          h2{
+            &.element-with-back-btn{
+              @include breakpoint(small-tab){
+                padding-left: 24px;
+              }
+            }
+          }
+          .form-floating{
+            margin-bottom: 16px;
+            @include breakpoint(x-large-laptop){
+              margin-bottom: 8px;
+            }
+          }
+      }
+      .initial-screen-title{
+        font-size: 80px;
+        @include breakpoint(large-laptop){
+          font-size: 70px;
+        }
+        @include breakpoint(small-laptop){
+          font-size: 60px;
+        }
+        @include breakpoint(ipad){
+          font-size: 45px;
+          text-align: center;
+          margin-bottom: 16px;
+        }
+      }
+      .initial-screen-logo{
+        max-width: 400px;
+        width: 100%;
+        @include breakpoint(x-large-laptop){
+          max-width: 300px;
+        }
+      }
+  }
+}
+
+.home-banner{
+  position: relative;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  .hero-section-gradient-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-height: 600px;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 250px), 0% 100%);
+    @include breakpoint(ipad){
+      clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 100px), 0% 100%);
+    }
+  }
+  .container{
+    padding-top: 150px;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .home-banner-content-box{
+      max-width: 1020px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      @include breakpoint(large-laptop){
+        max-width: 800px;
+      }
+    }
+
+    h1{
+      font-size: 64px;
+      @include breakpoint(large-laptop){
+        font-size: 50px;
+      }
+      @include breakpoint(laptop){
+        font-size: 46px;
+      }
+      @include breakpoint(small-laptop){
+        font-size: 42px;
+      }
+    }
+    .home-banner-image{
+      @include breakpoint(laptop){
+        max-width: 90%;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+      }
+      @include breakpoint(laptop){
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.get-auction-sheet-section{
+  .text-bars{
+    max-width: 600px;
+    @include breakpoint(ipad){
+      margin: auto;
+    }
+  }
+}
+.warning-section,
+.view-auction-sheet-section{
+  .section-title-area{
+    max-width: 800px;
+    margin: 0 auto;
+    .description{
+      margin: 0 auto 24px;
+      max-width: 550px;
+    }
+  }
+}
+.services-section{
+  .ca-simple-card{
+    box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.40);
+    padding: 48px 32px 32px 32px;
+    background-color: $white;
+    @include breakpoint(large-laptop){
+      padding: 36px 24px 32px 24px;
+    }
+    @include breakpoint(mobile){
+      padding: 24px;
+    }
+
+    .card-desc{
+      color: #989EBB;
+    }
+  }
+}
+
+.logo-slider {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  .single-logo{
+    width: 148px;
+    height: 148px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(small-laptop){
+      width: 120px;
+      height: 120px;
+    }
+
+    img{
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+.ca-sync-slider{
+  .slick-list{
+    padding: 0 0 40px !important;
+    .slick-slide{
+      .testimonial-card{
+        position: relative;
+        &:after{
+          content: "";
+          width: 50px;
+          height: 50px;
+          border-radius: 8px;
+          transform: translate(-50%, -100%) rotate(45deg);
+          position: absolute;
+          left: 50%;
+          bottom: -20px;
+          background-color: $white;
+          opacity: 0;
+          @include transition(.3s);
+        }
+      }
+
+      &.slick-active.slick-current{
+        .testimonial-card{
+          &:after{
+            transform: translate(-50%, 0%) rotate(45deg);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ca-sync-slider-nav{
+  .slick-list{
+    padding: 10px 0 20px !important;
+  }
+}
+.ca-sync-slider-nav{
+  max-width: 500px;
+  margin: 0 auto;
+  .slick-slide{
+    opacity: .5;
+    @include transition(.3s);
+
+    .image-box{
+      cursor: pointer;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      padding: 0;
+      margin: 0 auto;
+      transform: scale(1);
+      @include transition(.3s);
+      img{
+        @include object-cover-center();
+      }
+    }
+
+    &.slick-current.slick-active{
+      opacity: 1;
+      .image-box{
+        transform: scale(1.7);
+      }
+    }
+  }
+}
+
+.unique-report-section{
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 40% auto;
+  @include breakpoint(tab){
+    padding-bottom: 300px;
+    background-size: auto 250px;
+    background-position: bottom right;
+  }
+}
+
+.content-square {
+  position: relative;
+  &:before,
+  &:after{
+    content: "";
+    position: absolute;
+    display: block;
+    
+  }
+  &:before{
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+    background: linear-gradient(90deg,#BDBDBD00 0, #BDBDBD 50%, #BDBDBD00);
+  }
+  &:after{
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 50%;
+    background: linear-gradient(0deg,#BDBDBD00 0, #BDBDBD 50%, #BDBDBD00);
+  }
+}
+
+.field-with-icon{
+  position: relative;
+  .field-icon{
+    max-width: 20px;
+    max-height: 20px;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+  }
+  .form-control{
+    padding-left: 48px;
+  }
+}
+
+
+// Login Screens
+.initial-screen{
+  overflow: hidden;
+  > .container{
+    > .row{
+      min-height: 100vh;
+    }
+    .initial-screen-col1{
+      position: relative;
+      padding-top: 150px;
+      padding-bottom: 30px;
+      @include breakpoint(tab){
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+      &:before,
+      &:after{
+        content: "";
+        width: 100vw;
+        min-height: 100vh;
+        height: 100%;
+        position: absolute;
+        background-color: #FFF3E0;
+      }
+      &:before{
+        top: 0;
+        right: 0;
+        @include breakpoint(tab){
+          right: 50%;
+          transform: translateX(50%);
+        }
+      }
+      &:after{
+        bottom: 100%;
+        right: 0;
+        @include breakpoint(tab){
+          right: 50%;
+          transform: translateX(50%);
+          display: none;
+        }
+      }
+
+      .screen-image{
+        // position: absolute;
+        position: relative;
+        // left: 50%;
+        bottom: 0;
+        transform: translateX(-25%);
+        // height: 50vh;
+        width: 200%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        @include breakpoint(x-large-laptop){
+          transform: translateX(-15%);
+          width: 165%;
+        }
+        @include breakpoint(tab){
+          transform: translateX(0%);
+          width: 100%;
+        }
+        img{
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .initial-screen-col2 {
+      padding-top: 110px;
+      padding-bottom: 30px;
+      // @include breakpoint(tab){
+      //   padding-top: 50px;
+      // }
+      
+      .content-box {
+        position: relative;
+        width: 100%;
+        padding-left: 100px;
+        max-width: 650px;
+        @include breakpoint(tab){
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+// About Page
+.normal-banner-section{
+  padding-top: 200px;
+  @include breakpoint(large-laptop){
+    padding-top: 150px;
+  }
+}
+.car-verification-box{
+  position: relative;
+  > *{
+    position: relative;
+  }
+  &:before{
+    content: "";
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: $white;
+    transform: translateX(-50%);
+  }
+
+}
+.automotive-insight-section {
+  background-repeat: no-repeat;
+  background-size: 35% auto;
+  background-position: top 70px right 0px;
+  @include breakpoint(ipad){
+    background-position: right bottom;
+  }
+  @include breakpoint(tab){
+    background-size: 50%;
+  }
+
+  .meetup-img{
+    max-width: 85%;
+    @include breakpoint(ipad){
+      max-width: 100%;
+    }
+  }
+}
+
+.verify-content-row{
+  .text-col{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    
+    .car-img{
+      margin-left: auto;
+      transform: scale(1.4) translateX(-50px);
+    }
+  }
+}
+
+
+/***************************************
+    FOOTER
+***************************************/
+.newsletter-section{
+  position: relative;
+  &:before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #dee2e6;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+}
+
+.footer-content-section{
+  .logo-box{
+    display: block;
+    width: 125px;
+    margin-right: 48px;
+    img{
+      max-width: 100%;
+    }
+  }
+  .about-content{
+    max-width: 500px;
+  }
+}
+
+.contact-widget{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  .icon-box{
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: $lightgrey;
+    @include flexCenter();
+  }
+  .content{
+    padding-left: 16px;
+    width: calc(100% - 48px);
+  }
+}
+
+.footer-widget{
+  ul{
+    list-style-type: none;
+    li{
+      margin-bottom: 16px;
+      @include breakpoint(laptop){
+        margin-bottom: 8px;
+      }
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        text-decoration: none;
+        color: $grey;
+        @include breakpoint(laptop){
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.social-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  @include breakpoint(small-tab){
+    gap: 16px;
+  }
+  .single-social-btn{
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1;
+  }
+}
+
+

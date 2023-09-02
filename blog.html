@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devica-width, initial-scale=1.0">
+    <title>Car Auction | Blog</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Site header -->
+    <header id="ca-header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-left">
+              <a href="./index.html" class="logo-box no-decoration">
+                  <img src="./assets/images/logo.svg" alt="logo" />
+              </a>
+              <div class="header-menu">
+                <a href="./index.html" class="logo-box no-decoration d-xl-none d-block pt-4 pb-3 mb-2 broder-bottom w-100">
+                  <img src="./assets/images/logo.svg" alt="logo" />
+                </a>
+                <nav>
+                    <ul>
+                      <li class="active">
+                        <a href="./index.html">Home</a>
+                      </li>
+                      <li>
+                        <a href="#">Guide
+                          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                            <path d="M6.55886 3H7.89386C9.54886 3 10.2289 4.175 9.39886 5.61L8.72886 6.765L8.05886 7.92C7.22886 9.355 5.87386 9.355 5.04386 7.92L4.37386 6.765L3.70386 5.61C2.88886 4.175 3.56386 3 5.22386 3H6.55886Z" fill="#575E8D"/>
+                          </svg>
+                        </a>
+                        <div class="ca-mega-menu">
+                          <h6 class="mega-menu-title text-grey fw-400">YOUR ESSENTIAL RESOURCE</h6>
+                          <ul>
+                            <li>
+                              <a href="./how-it-works.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-how-it-works.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">How it works</div>
+                                  <div class="text-grey">Simplifying the Way It Works</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./how-to-read.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-how-to-read.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">How to read</div>
+                                  <div class="text-grey">Unlocking the Meaning</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./how-points-work.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-how-points-work.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">How points work</div>
+                                  <div class="text-grey">Unveiling the Mechanics</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./videos.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-video.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Video</div>
+                                  <div class="text-grey">Engaging and Informative</div>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#">Products
+                          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                            <path d="M6.55886 3H7.89386C9.54886 3 10.2289 4.175 9.39886 5.61L8.72886 6.765L8.05886 7.92C7.22886 9.355 5.87386 9.355 5.04386 7.92L4.37386 6.765L3.70386 5.61C2.88886 4.175 3.56386 3 5.22386 3H6.55886Z" fill="#575E8D"/>
+                          </svg>
+                        </a>
+                        <div class="ca-mega-menu">
+                          <h6 class="mega-menu-title text-grey fw-400">EXPLORE OUR PRODUCTS</h6>
+                          <ul>
+                            <li>
+                              <a href="#">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-import-cars.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Import Cars</div>
+                                  <div class="text-grey">Tailored to Your Preferences</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./index.html#home-banner">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-auction-house.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Auction House</div>
+                                  <div class="text-grey">Uncover Remarkable Deals</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./translate-to-eng.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-translate-to-english.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Translate to English</div>
+                                  <div class="text-grey">Breaking Language Barriers</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./report.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-report.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Report+</div>
+                                  <div class="text-grey">Unveiling Deeper Insights</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./export-certification-translation.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-export-cert-translation.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Export Cert. Translation</div>
+                                  <div class="text-grey">Ensuring Clarity and Accuracy</div>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#">Resources
+                          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                            <path d="M6.55886 3H7.89386C9.54886 3 10.2289 4.175 9.39886 5.61L8.72886 6.765L8.05886 7.92C7.22886 9.355 5.87386 9.355 5.04386 7.92L4.37386 6.765L3.70386 5.61C2.88886 4.175 3.56386 3 5.22386 3H6.55886Z" fill="#575E8D"/>
+                          </svg>
+                        </a>
+                        <div class="ca-mega-menu">
+                          <h6 class="mega-menu-title text-grey fw-400">EXPAND YOUR KNOWLEDGE</h6>
+                          <ul>
+                            <li>
+                              <a href="./index.html#home-banner">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-auction-house.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Auction Sheet</div>
+                                  <div class="text-grey">Unveiling Vehicle Details</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./index.html#car-tips">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-car-tips.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Car Tips</div>
+                                  <div class="text-grey">Unlock Valuable Tips</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-japan.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Japan</div>
+                                  <div class="text-grey">Stay Updated</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-car.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">Car</div>
+                                  <div class="text-grey">Updates in the world of cars</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="./blog.html">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-news.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">News</div>
+                                  <div class="text-grey">Stay Informed</div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <div class="icon-box">
+                                  <img src="./assets/images/icon-view.svg" alt="img" />
+                                </div>
+                                <div class="content-box">
+                                  <div class="fw-600">View All</div>
+                                  <div class="text-grey">Discover Everything</div>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="./packages.html">Packages</a>
+                      </li>
+                      <li>
+                        <a href="./about.html">About</a>
+                      </li>
+                      <li>
+                        <a href="./contact.html">Contact</a>
+                      </li>
+                    </ul>
+                </nav>
+                <div class="header-actions d-xl-none d-block">
+                  <a href="./login.html" class="ca-btn ca-btn-outline-white me-2">Login</a>
+                  <a href="./verify.html" class="ca-btn ca-btn-secondary me-2"><span class="me-2"><img src="./assets/images/verify-icon.svg" alt="img" /></span>Verify Now</a>
+                  <a href="./signup.html" class="ca-btn ca-btn-primary">Sign Up</a>
+                </div>
+            </div>
+          </div>
+          <div class="header-right">
+            <div class="header-actions d-xl-block d-none">
+              <a href="./login.html" class="ca-btn me-2">Login</a>
+              <a href="./verify.html" class="ca-btn ca-btn-secondary me-2"><span class="me-2"><img src="./assets/images/verify-icon.svg" alt="img" /></span>Verify Now</a>
+              <a href="./signup.html" class="ca-btn ca-btn-outline-primary">Sign Up</a>
+
+                <!-- <div class="user-profile-area">
+                  <div class="user-avatar-box">
+                      <img src="./assets/images/avatar.png" alt="img" />
+                  </div>
+                  <div class="profile-dropdown-container">
+                      <div class="profile-dropdown-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          <p>Albert</p>
+                          <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                      </div>
+                      <ul class="dropdown-menu dropdown-menu-end ca-dropdown-menu">
+                          <div class="ca-profile-container">
+                          <div class="ca-profile-img">
+                              <img src="./assets/images/avatar.png" alt="">
+                          </div>
+                          <div class="ca-profile-name text-blue">Jennifer</div>
+                          </div>
+                          <div class="separator"></div>
+                          <li><a href="#"><button class="dropdown-item" type="button"><span class="icon"><i class="fa fa-user" aria-hidden="true"></i></span><span class="text">Profile</span></button></a></li>
+                          <li><a href="#"><button class="dropdown-item" type="button"><span class="icon"><i class="fa fa-users" aria-hidden="true"></i></span><span class="text">User Mangement</span></button></a></li>
+                          <div class="separator"></div>
+                          <li><a href="#"><button class="dropdown-item" type="button"><span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i></span><span class="text">Logout</span></button></a></li>
+                      </ul>
+                      <p class="text-mini mb-0 user-role">Admin</p>
+                  </div>
+                </div> -->
+            </div>
+            <div class="hamburger ms-4 d-xl-none d-block">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="site-main-content">
+        <section class="section-padding pt-first-section">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-7">
+                        <h6 class="text-grey mb-4">Auction Sheet</h6>
+                        <h2>Expert Insights On<br/> Everything Car Auction</h2>
+                    </div>
+                    <div class="col-5">
+                        <h4 class="mb-3">Discover the latest Car auction sheet offers and latest vehicle reviews.</h4>
+                        <div class="text-grey mb-4">
+                            <p>Subscribe to your monthly newsletter</p>
+                        </div>
+                        <form action="#">
+                            <div class="d-flex">
+                                <div class="field-with-icon flex-auto me-2">
+                                    <img src="./assets/images/sms.svg" class="field-icon" alt="field icon">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <button class="ca-btn ca-btn-outline-primary">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>   
+                <div class="gradient-line-horizontal my-5"></div> 
+                <div class="mb-5">
+                    <div class="blog-featured-card">
+                        <div class="row gy-3 gx-lg-5">
+                            <div class="col-6">
+                                <div class="card-image" style="background-image: url('./assets/images/blog-img.png');">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card-content">
+                                    <div class="ca-badge ca-badge-success mb-3">Auction Sheet</div>
+                                    <h3 class="card-title mb-3"><a href="#" class="text-primary hover-text-secondary no-decoration transition">The Auction Process: How To Buy And Sell Goods Or Services</a></h3>
+                                    <div class="card-description mb-4 text-grey">
+                                        <p>What does Auction mean? An Auction Process is a system used to buy or sell goods... <img src="./assets/images/arrow-right.svg" alt="img" /></p>
+                                    </div>
+                                    <div class="user-info-box">
+                                        <div class="user-image">
+                                            <img src="./assets/images/avatar.png" alt="img" />
+                                        </div>
+                                        <div class="user-info">
+                                            <div class="user-name">By: Sebarrion</div>
+                                            <div class="text-extra-mini text-grey">Feb 24, 2023</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-4 gy-5 gxxl-5 pt-md-5">
+                    <div class="col-6 col-lg-4 mb-4 mb-xxl-5">
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/blog-img.png" alt="img" />
+                            </div>
+                            <div class="blog-card-body">
+                                <div class="ca-badge ca-badge-success mb-3">Auction Sheet</div>
+                                <h6 class="card-title mb-3"><a href="#" class="text-primary hover-text-secondary no-decoration transition">The Auction Process: How To Buy And Sell Goods Or Services</a></h6>
+                                <div class="card-description mb-4 text-grey">
+                                    <p>What does Auction mean? An Auction Process is a system used to buy or sell goods... <img src="./assets/images/arrow-right.svg" alt="img" /></p>
+                                </div>
+                                <div class="user-info-box">
+                                    <div class="user-image">
+                                        <img src="./assets/images/avatar.png" alt="img" />
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="user-name">By: Sebarrion</div>
+                                        <div class="text-extra-mini text-grey">Feb 24, 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-4 mb-xxl-5">
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/blog-img.png" alt="img" />
+                            </div>
+                            <div class="blog-card-body">
+                                <div class="ca-badge ca-badge-success mb-3">Auction Sheet</div>
+                                <h6 class="card-title mb-3"><a href="#" class="text-primary hover-text-secondary no-decoration transition">The Auction Process: How To Buy And Sell Goods Or Services</a></h6>
+                                <div class="card-description mb-4 text-grey">
+                                    <p>What does Auction mean? An Auction Process is a system used to buy or sell goods... <img src="./assets/images/arrow-right.svg" alt="img" /></p>
+                                </div>
+                                <div class="user-info-box">
+                                    <div class="user-image">
+                                        <img src="./assets/images/avatar.png" alt="img" />
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="user-name">By: Sebarrion</div>
+                                        <div class="text-extra-mini text-grey">Feb 24, 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-4 mb-xxl-5">
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/blog-img.png" alt="img" />
+                            </div>
+                            <div class="blog-card-body">
+                                <div class="ca-badge ca-badge-success mb-3">Auction Sheet</div>
+                                <h6 class="card-title mb-3"><a href="#" class="text-primary hover-text-secondary no-decoration transition">The Auction Process: How To Buy And Sell Goods Or Services</a></h6>
+                                <div class="card-description mb-4 text-grey">
+                                    <p>What does Auction mean? An Auction Process is a system used to buy or sell goods... <img src="./assets/images/arrow-right.svg" alt="img" /></p>
+                                </div>
+                                <div class="user-info-box">
+                                    <div class="user-image">
+                                        <img src="./assets/images/avatar.png" alt="img" />
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="user-name">By: Sebarrion</div>
+                                        <div class="text-extra-mini text-grey">Feb 24, 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-4 mb-xxl-5">
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/blog-img.png" alt="img" />
+                            </div>
+                            <div class="blog-card-body">
+                                <div class="ca-badge ca-badge-success mb-3">Auction Sheet</div>
+                                <h6 class="card-title mb-3"><a href="#" class="text-primary hover-text-secondary no-decoration transition">The Auction Process: How To Buy And Sell Goods Or Services</a></h6>
+                                <div class="card-description mb-4 text-grey">
+                                    <p>What does Auction mean? An Auction Process is a system used to buy or sell goods... <img src="./assets/images/arrow-right.svg" alt="img" /></p>
+                                </div>
+                                <div class="user-info-box">
+                                    <div class="user-image">
+                                        <img src="./assets/images/avatar.png" alt="img" />
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="user-name">By: Sebarrion</div>
+                                        <div class="text-extra-mini text-grey">Feb 24, 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-4 mb-xxl-5">
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/blog-img.png" alt="img" />
+                            </div>
+                            <div class="blog-card-body">
+                                <div class="ca-badge ca-badge-success mb-3">Auction Sheet</div>
+                                <h6 class="card-title mb-3"><a href="#" class="text-primary hover-text-secondary no-decoration transition">The Auction Process: How To Buy And Sell Goods Or Services</a></h6>
+                                <div class="card-description mb-4 text-grey">
+                                    <p>What does Auction mean? An Auction Process is a system used to buy or sell goods... <img src="./assets/images/arrow-right.svg" alt="img" /></p>
+                                </div>
+                                <div class="user-info-box">
+                                    <div class="user-image">
+                                        <img src="./assets/images/avatar.png" alt="img" />
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="user-name">By: Sebarrion</div>
+                                        <div class="text-extra-mini text-grey">Feb 24, 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-4 mb-4 mb-xxl-5">
+                        <div class="blog-card">
+                            <div class="blog-card-banner">
+                                <img src="./assets/images/blog-img.png" alt="img" />
+                            </div>
+                            <div class="blog-card-body">
+                                <div class="ca-badge ca-badge-success mb-3">Auction Sheet</div>
+                                <h6 class="card-title mb-3"><a href="#" class="text-primary hover-text-secondary no-decoration transition">The Auction Process: How To Buy And Sell Goods Or Services</a></h6>
+                                <div class="card-description mb-4 text-grey">
+                                    <p>What does Auction mean? An Auction Process is a system used to buy or sell goods... <img src="./assets/images/arrow-right.svg" alt="img" /></p>
+                                </div>
+                                <div class="user-info-box">
+                                    <div class="user-image">
+                                        <img src="./assets/images/avatar.png" alt="img" />
+                                    </div>
+                                    <div class="user-info">
+                                        <div class="user-name">By: Sebarrion</div>
+                                        <div class="text-extra-mini text-grey">Feb 24, 2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class=" w-fit-content mx-auto mt-5">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination ca-pagination">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                          <!-- <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li> -->
+                          <li class="page-item"><a class="page-link" href="#">...</a></li>
+                          <li class="page-item"><a class="page-link" href="#">16</a></li>
+                          <li class="page-item"><a class="page-link" href="#">17</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                          </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+      </div>
+    </main>
+    
+    <!-- Site footer -->
+    <footer id="ca-footer">
+      <section class="newsletter-section section-padding">
+        <div class="container position-relative">  
+          <div class="p-3 px-sm-5 py-sm-4 rounded-large bg-primary text-white">
+            <div class="row gy-4">
+              <div class="col-6 col-lg-7">
+                <h6>Newsletter</h6>
+                <div class="text-lightgrey2">Send me great Car auction sheet offers and latest vehicle reviews.</div>
+              </div>
+              <div class="col-6 col-lg-5">
+                <form class="field-with-btn">
+                  <div class="field-icon"><img src="./assets/images/sms.svg" alt="img" /></div>
+                  <input type="email" class="form-control" placeholder="Enter your email" />
+                  <button class="ca-btn ca-btn-secondary">Submit</button>
+                </form>
+              </div>
+            </div>    
+          </div>
+        </div>
+      </section>
+      <section class="footer-content-section section-padding pt-4">
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-lg-6">
+              <div class="logo-box mb-4">
+                <img src="./assets/images/logo.svg" alt="img" />
+              </div>
+              <div class="about-content text-grey mb-5"><p>Car Auction Sheet have the aim to improve the process of buying sheets to provide a better experience for customers, and we have become the most admired digital business.</p></div>
+              <div class="contact-widget mb-3">
+                <div class="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M17.3077 16.2748C17.3077 16.5748 17.241 16.8832 17.0993 17.1832C16.9577 17.4832 16.7744 17.7665 16.5327 18.0332C16.1244 18.4832 15.6743 18.8082 15.166 19.0165C14.666 19.2248 14.1244 19.3332 13.541 19.3332C12.691 19.3332 11.7827 19.1332 10.8243 18.7248C9.86602 18.3165 8.90768 17.7665 7.95768 17.0748C6.99935 16.3748 6.09102 15.5998 5.22435 14.7415C4.36602 13.8748 3.59102 12.9665 2.89935 12.0165C2.21602 11.0665 1.66602 10.1165 1.26602 9.17484C0.866016 8.22484 0.666016 7.3165 0.666016 6.44984C0.666016 5.88317 0.766016 5.3415 0.966016 4.8415C1.16602 4.33317 1.48268 3.8665 1.92435 3.44984C2.45768 2.92484 3.04102 2.6665 3.65768 2.6665C3.89102 2.6665 4.12435 2.7165 4.33268 2.8165C4.54935 2.9165 4.74102 3.0665 4.89102 3.28317L6.82435 6.00817C6.97435 6.2165 7.08268 6.40817 7.15768 6.5915C7.23268 6.7665 7.27435 6.9415 7.27435 7.09984C7.27435 7.29984 7.21602 7.49984 7.09935 7.6915C6.99102 7.88317 6.83268 8.08317 6.63268 8.28317L5.99935 8.9415C5.90768 9.03317 5.86602 9.1415 5.86602 9.27484C5.86602 9.3415 5.87435 9.39984 5.89102 9.4665C5.91602 9.53317 5.94102 9.58317 5.95768 9.63317C6.10768 9.90817 6.36602 10.2665 6.73268 10.6998C7.10768 11.1332 7.50768 11.5748 7.94102 12.0165C8.39102 12.4582 8.82435 12.8665 9.26602 13.2415C9.69935 13.6082 10.0577 13.8582 10.341 14.0082C10.3827 14.0248 10.4327 14.0498 10.491 14.0748C10.5577 14.0998 10.6243 14.1082 10.6993 14.1082C10.841 14.1082 10.9493 14.0582 11.041 13.9665L11.6743 13.3415C11.8827 13.1332 12.0827 12.9748 12.2743 12.8748C12.466 12.7582 12.6577 12.6998 12.866 12.6998C13.0243 12.6998 13.191 12.7332 13.3743 12.8082C13.5577 12.8832 13.7494 12.9915 13.9577 13.1332L16.716 15.0915C16.9327 15.2415 17.0827 15.4165 17.1743 15.6248C17.2577 15.8332 17.3077 16.0415 17.3077 16.2748Z" stroke="#1C1C45" stroke-width="1.2" stroke-miterlimit="10"/>
+                    <path d="M14.4167 8.49967C14.4167 7.99967 14.025 7.23301 13.4417 6.60801C12.9083 6.03301 12.2 5.58301 11.5 5.58301" stroke="#1C1C45" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.3333 8.49984C17.3333 5.27484 14.725 2.6665 11.5 2.6665" stroke="#1C1C45" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="content">
+                  <p class="text-mini text-grey mb-0">Tel</p>
+                  <p class="mb-0">000-123-3456</p>
+                </div>
+              </div>
+              <div class="contact-widget mb-3">
+                <div class="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M14.1667 17.0837H5.83335C3.33335 17.0837 1.66669 15.8337 1.66669 12.917V7.08366C1.66669 4.16699 3.33335 2.91699 5.83335 2.91699H14.1667C16.6667 2.91699 18.3334 4.16699 18.3334 7.08366V12.917C18.3334 15.8337 16.6667 17.0837 14.1667 17.0837Z" stroke="#1C1C45" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.1666 7.5L11.5583 9.58333C10.7 10.2667 9.29164 10.2667 8.43331 9.58333L5.83331 7.5" stroke="#1C1C45" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="content">
+                  <p class="text-mini text-grey mb-0">Mail</p>
+                  <p class="mb-0">help@carauctionsheet.com</p>
+                </div>
+              </div>
+              <div class="contact-widget mb-3">
+                <div class="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 11.1912C11.436 11.1912 12.6 10.0272 12.6 8.59121C12.6 7.15527 11.436 5.99121 10 5.99121C8.56408 5.99121 7.40002 7.15527 7.40002 8.59121C7.40002 10.0272 8.56408 11.1912 10 11.1912Z" stroke="#1C1C45" stroke-width="1.5"/>
+                    <path d="M3.01669 7.07533C4.65836 -0.141339 15.35 -0.133006 16.9834 7.08366C17.9417 11.317 15.3084 14.9003 13 17.117C11.325 18.7337 8.67502 18.7337 6.99169 17.117C4.69169 14.9003 2.05836 11.3087 3.01669 7.07533Z" stroke="#1C1C45" stroke-width="1.5"/>
+                  </svg>
+                </div>
+                <div class="content">
+                  <p class="text-mini text-grey mb-0">Address</p>
+                  <p class="mb-0">706 Campfire Ave. Meriden, CT 06450</p>
+                </div>
+              </div>
+              <p class="mt-4 text-mini text-grey d-lg-block d-none">© 2000-2021, All Rights Reserved</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="row gy-4">
+                <div class="col-sm-6 col-4 footer-widget">
+                  <h6 class="mb-4">About</h6>
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Payment Method</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Our Authors</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-4 footer-widget">
+                  <h6 class="mb-4">Product</h6>
+                  <ul>
+                    <li><a href="#">Import Cars</a></li>
+                    <li><a href="#">Auction House</a></li>
+                    <li><a href="#">Translate into English</a></li>
+                    <li><a href="#">Report+</a></li>
+                    <li><a href="#">Export Cert. Translation</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-4 footer-widget">
+                  <h6 class="mb-4">FAQ</h6>
+                  <ul>
+                    <li><a href="#">Auction Sheet</a></li>
+                    <li><a href="#">Car Tips</a></li>
+                    <li><a href="#">Japan</a></li>
+                    <li><a href="#">Car</a></li>
+                    <li><a href="#">View All</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="social-buttons mt-5">
+                <a href="#" class="single-social-btn"><img src="./assets/images/linkedin-btn.png" alt="img" /></a>
+                <a href="#" class="single-social-btn"><img src="./assets/images/facebook-btn.png" alt="img" /></a>
+                <a href="#" class="single-social-btn"><img src="./assets/images/youtube-btn.png" alt="img" /></a>
+              </div>
+              <p class="mt-4 text-mini text-grey d-lg-none d-block mb-0">© 2000-2021, All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </footer>
+    
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="./assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.js"></script>
+    <script type="text/javascript" src="./assets/js/custom.js"></script>
+</body>
+</html>
